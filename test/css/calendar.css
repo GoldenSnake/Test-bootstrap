@@ -1,0 +1,146 @@
+/*------------------ Календарь со стрелками -----*/
+
+.calendar {
+	padding: 10px;
+    background-color: #42548a;
+}
+.month td {
+	 color: #D1C4E9;
+    padding: 10px;
+}
+
+#calendar2 {
+  width: 100%;
+  height: 400px;
+  line-height: 1.2em;
+  font-size: 17px;
+    font-weight: bold;
+  text-align: center;
+  color: #ede7f6;
+}
+
+#calendar2 thead {
+	background-color: #3b2e4f;
+    padding-top: 10px;
+}
+#calendar2 thead tr:last-child {
+  font-size: small;
+  color: #ede7f6;
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+  color:#ede7f6;
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+}
+#calendar2 tbody td {
+    color:  #212121;
+    border: 2px solid #311b92;
+    background-color: #fafafa;
+}
+#calendar2 tbody td:nth-child(n+6), #calendar2 .holiday {
+  color: rgb(231, 140, 92);
+}
+#calendar2 tbody td.today {
+  background-color: #3b2e4f;
+  color: #fff;
+  outline: 3px solid #0c68cc;
+}
+/*------------------ /Календарь со стрелками -----*/
+/*------------------ Календарь со стрелками -----*/
+
+.calendar {
+	padding: 10px;
+    background-color: #42548a;
+}
+.month td {
+	 color: #D1C4E9;
+    padding: 10px;
+}
+
+#calendar4 {
+  width: 100%;
+  height: 200px;
+  line-height: 1.2em;
+  font-size: 17px;
+    font-weight: bold;
+  text-align: center;
+  color: #ede7f6;
+}
+
+#calendar4 thead {
+	background-color: #3b2e4f;
+    padding-top: 10px;
+}
+#calendar4 thead tr:last-child {
+  font-size: small;
+  color: #ede7f6;
+}
+#calendar4 thead tr:nth-child(1) td:nth-child(2) {
+  color:#ede7f6;
+}
+#calendar4 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+}
+#calendar4 tbody td {
+    color:  #212121;
+    border: 2px solid #311b92;
+    background-color: #fafafa;
+}
+#calendar4 tbody td:nth-child(n+6), #calendar2 .holiday {
+  color: rgb(231, 140, 92);
+}
+#calendar4 tbody td.today {
+  background-color: #3b2e4f;
+  color: #fff;
+  outline: 3px solid #0c68cc;
+}
+/*------------------ /Календарь со стрелками -----*/
+
+
+
+
+/*------------------ Календарь с вып м и г -----*/
+
+#calendar3 {
+   width: 100%;
+  height: 400px;
+  line-height: 1.2em;
+  font-size: 17px;
+    font-weight: bold;
+  text-align: center;
+  color: #ede7f6;
+    
+}
+
+#calendar3 thead {
+	background-color: #3b2e4f;
+    padding-top: 10px;
+}
+
+#calendar3 thead tr:last-child {
+  font-size: small;
+  color: #ede7f6;
+}
+#calendar3 tbody td {
+    color: #212121;
+    border: 2px solid #311b92;
+    background-color: #fafafa;
+}
+#calendar3 tbody td:nth-child(n+6), #calendar3 .holiday {
+  color: rgb(231, 140, 92);
+}
+#calendar3 tbody td.today {
+ background-color: #3b2e4f;
+  color: #fff;
+  outline: 3px solid #0c68cc;
+}
+
+.month-select {
+    margin-top: 10px;  
+    border: none;
+    background-color: #3b2e4f;
+    color: #ede7f6;
+    font-weight: bold;
+}
+/*------------------/Календарь с вып м и г -----*/

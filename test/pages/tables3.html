@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Таблицы</title>
+  
+  
+    <link rel="stylesheet" href="../../test/css/sidebar-menu.css">
+  <link rel="stylesheet" href="../../test/css/scroll.css">
+  
+  <link rel="stylesheet" href="../../test/css/page.css"> 
+    
+       <!-- Icons -->
+  <link rel="stylesheet" href="../../test/font-awesome-4.7.0/css/font-awesome.min.css">
+    
+ <link rel="stylesheet" href="../../test/b/css/style.css">
+    <link rel="stylesheet" href="../../test/css/tab.css">     
+    <link rel="stylesheet" href="../../test/css/dataTables.bootstrap4.min.css">  
+     <link rel="stylesheet" href="../../test/css/datatables.min.css">  
+
+  
+</head>
+
+<body>
+    
+  <header>
+     
+   <nav class="navbar fixed-top navbar-expand-lg navbar-dark " style="background-color: #272F4A;">
+        
+  <a class="navbar-brand" href="../../index.html"><i class="fa fa-bug fa-2x"></i></a>
+    
+   
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">     
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        
+        
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        <a class="nav-link" href="#"><div class="menu-open1"><i class="fa fa-bars"></i> Меню</div></li></a>
+      <li class="nav-item active">
+        <a class="nav-link" href="../../index.html">Главная <span class="sr-only">(current)</span></a>
+      </li>
+    
+               
+      </ul>
+       <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown d-md-down-none">
+        <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            
+       
+           
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-user-circle"></i>
+              Пользователь
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <div class="user-box">
+            <div class="u-img"><img src="../../test/img/user.png" alt="user"></div>
+            <div class="u-text">Фамилия Имя
+                <p class="text-muted">username</p></div>                               
+                <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Профиль</a>
+          <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> Настройки</a>          
+          <div class="dropdown-divider"></div>
+            <div class="u-text"><p class="text-muted"><i class="fa fa-clock-o"></i>&nbsp;Сессия истекает через 1ч 20 мин</p></div>
+              <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Выход</a>
+        </div>
+      </li>           
+       </ul>     
+      </div>
+</nav>
+       
+        <!-- Навигация -->
+            <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../../index.html">Главная</a></li>
+        <li class="breadcrumb-item">Таблица с иконками и сортировкой</li>
+        
+      </ol>        
+     
+</header>    
+ 
+         
+        
+          
+    <div class="menu">     
+            <!-- Меню -->
+        <div class="menu-content">
+     <iframe src="menu.html" class="menu-frame" name="menu-frame" height="100%" frameborder="0"></iframe>
+        <div class="menu-close1">✕</div>
+    </div>
+         </div>
+      
+  
+        
+        <div class="container-fluid">
+        <div id="ui-view" style="opacity: 1;"><div class="animated fadeIn">
+ 
+
+  <div class="row">
+      
+      
+      
+    <div class="col-lg-6">
+    
+         
+        <div class="card">
+    <div class="card-header">
+      <i class="fa fa-edit"></i> Таблица с иконками и сортировкой
+      
+    </div>
+    <div class="card-body">
+      <div id="DataTables_Table_0_wrapper2" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer" width="100%">
+          <div class="row">
+              <div class="col-sm-12 col-md-6">
+                  <div class="dataTables_length" id="DataTables_Table_0_length">
+                  </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                  <div id="DataTables_Table_0_filter" class="dataTables_filter" > 
+                  
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-12">
+                  <table class="table-responsive-sm table table-striped table-bordered datatable dataTable no-footer" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info" style="border-collapse: collapse !important" width="100%">
+        <thead>
+          <tr role="row">
+              <th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Username: activate to sort column descending" style="width: 215px;">Username</th>
+              <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Date registered: activate to sort column ascending" style="width: 184px;">Дата регистрации</th>
+              <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Role: activate to sort column ascending" style="width: 79px;">Должность</th>
+              <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 88px;">Статус</th>
+              <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: 191px;">Опции</th></tr>
+        </thead>
+        <tbody>
+        <tr role="row" class="odd">
+            <td class="sorting_1">Adam Alister</td>
+            <td>2012/01/21</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+            </a>
+            </td>
+          </tr><tr role="row" class="even">
+            <td class="sorting_1">Adinah Ralph</td>
+            <td>2012/06/01</td>
+            <td>Admin</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+            </a>
+            </td>
+          </tr><tr role="row" class="odd">
+            <td class="sorting_1">Ajith Hristijan</td>
+            <td>2012/03/01</td>
+            <td>Member</td>
+            <td>
+              ТекстТекст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+          </tr><tr role="row" class="even">
+            <td class="sorting_1">Alphonse Ivo</td>
+            <td>2012/01/01</td>
+            <td>Member</td>
+            <td>
+             ТекстТекст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+                <i class="fa fa-search-plus "></i>
+              </a>
+              <a class="btn btn-info" href="#">
+                <i class="fa fa-edit "></i>
+              </a>
+              <a class="btn btn-danger" href="#">
+                <i class="fa fa-trash-o "></i>
+              </a>
+            </td>
+          </tr><tr role="row" class="odd">
+            <td class="sorting_1">Anton Phunihel</td>
+            <td>2012/01/01</td>
+            <td>Member</td>
+            <td>
+              ТекстТекст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+                <i class="fa fa-search-plus "></i>
+              </a>
+              <a class="btn btn-info" href="#">
+                <i class="fa fa-edit "></i>
+              </a>
+              <a class="btn btn-danger" href="#">
+                <i class="fa fa-trash-o "></i>
+              </a>
+            </td>
+          </tr><tr role="row" class="even">
+            <td class="sorting_1">Bao Gaspar</td>
+            <td>2012/01/01</td>
+            <td>Member</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+          </tr><tr role="row" class="odd">
+            <td class="sorting_1">Bernhard Shelah</td>
+            <td>2012/06/01</td>
+            <td>Admin</td>
+            <td>
+             Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+          </tr><tr role="row" class="even">
+            <td class="sorting_1">Bünyamin Kasper</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+          </tr><tr role="row" class="odd">
+            <td class="sorting_1">Carlito Roffe</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+            </a>
+            </td>
+          </tr>
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Bünyamin Kasper</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+          </tr>
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Bünyamin Kasper</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+          </tr>
+            
+            
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Bünyamin Kasper</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+                Текст Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+          </tr>
+            
+            
+            
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Byamin Sper</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+          </tr>
+            
+            
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Bin Kas</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+          </tr>
+            
+            
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Bamin Ker</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+          </tr>
+            
+            
+             <tr role="row" class="even">
+            <td class="sorting_1">Петр</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+          </tr>
+            
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Chidubem Gottlob</td>
+            <td>2012/02/01</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+            </a>
+            </td>
+          </tr></tbody>
+      </table></div></div>
+          <div class="row"><div class="col-sm-12 col-md-5">
+              </div>
+              <div class="col-sm-12 col-md-7">
+                  <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+                     </div></div></div></div>
+    </div>
+  </div>
+        
+        
+        
+    </div>
+    <!--/.col-->
+
+      
+      
+      
+      
+      
+
+    <div class="col-lg-4">
+    
+         
+        <div class="card">
+    <div class="card-header">
+      <i class="fa fa-edit"></i> Таблица с иконками и сортировкой
+      
+    </div>
+    <div class="card-body">
+      <div id="DataTables_Table_0_wrapper2" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer" width="100%">
+          <div class="row">
+              <div class="col-sm-12 col-md-6">
+                  <div class="dataTables_length" id="DataTables_Table_0_length">
+                  </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                  <div id="DataTables_Table_0_filter" class="dataTables_filter" > 
+                  
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-12">
+                  <table class="table-responsive-sm table table-striped table-bordered datatable dataTable no-footer" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info" style="border-collapse: collapse !important" width="100%">
+        <thead>
+          <tr role="row">
+              <th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Username: activate to sort column descending" style="width: 215px;">Username</th>
+              <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Date registered: activate to sort column ascending" style="width: 184px;">Дата регистрации</th>
+              <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Role: activate to sort column ascending" style="width: 79px;">Должность</th>
+              <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 88px;">Статус</th>
+              <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: 191px;">Опции</th></tr>
+        </thead>
+        <tbody>
+        <tr role="row" class="odd">
+            <td class="sorting_1">Adam Alister</td>
+            <td>2012/01/21</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              
+            </td>
+          </tr><tr role="row" class="even">
+            <td class="sorting_1">Adinah Ralph</td>
+            <td>2012/06/01</td>
+            <td>Admin</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+          
+            </td>
+          </tr><tr role="row" class="odd">
+            <td class="sorting_1">Ajith Hristijan</td>
+            <td>2012/03/01</td>
+            <td>Member</td>
+            <td>
+              ТекстТекст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+        
+            </td>
+          </tr><tr role="row" class="even">
+            <td class="sorting_1">Alphonse Ivo</td>
+            <td>2012/01/01</td>
+            <td>Member</td>
+            <td>
+             ТекстТекст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+                <i class="fa fa-search-plus "></i>
+              </a>
+            
+            </td>
+          </tr><tr role="row" class="odd">
+            <td class="sorting_1">Anton Phunihel</td>
+            <td>2012/01/01</td>
+            <td>Member</td>
+            <td>
+              ТекстТекст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+                <i class="fa fa-search-plus "></i>
+              </a>
+             
+            </td>
+          </tr><tr role="row" class="even">
+            <td class="sorting_1">Bao Gaspar</td>
+            <td>2012/01/01</td>
+            <td>Member</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+           
+            </td>
+          </tr><tr role="row" class="odd">
+            <td class="sorting_1">Bernhard Shelah</td>
+            <td>2012/06/01</td>
+            <td>Admin</td>
+            <td>
+             Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+            
+            </td>
+          </tr><tr role="row" class="even">
+            <td class="sorting_1">Bünyamin Kasper</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+          
+            </td>
+          </tr><tr role="row" class="odd">
+            <td class="sorting_1">Carlito Roffe</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+           
+            </td>
+          </tr>
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Bünyamin Kasper</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+         
+            </td>
+          </tr>
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Bünyamin Kasper</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+         
+            </td>
+          </tr>
+            
+            
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Bünyamin Kasper</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+                Текст Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+          
+            </td>
+          </tr>
+            
+            
+            
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Byamin Sper</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+           
+            </td>
+          </tr>
+            
+            
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Bin Kas</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+           
+            </td>
+          </tr>
+            
+            
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Bamin Ker</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+          
+            </td>
+          </tr>
+            
+            
+             <tr role="row" class="even">
+            <td class="sorting_1">Петр</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+           
+            </td>
+          </tr>
+            
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Chidubem Gottlob</td>
+            <td>2012/02/01</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+           
+            </td>
+          </tr></tbody>
+      </table></div></div>
+          <div class="row"><div class="col-sm-12 col-md-5">
+              </div>
+              <div class="col-sm-12 col-md-7">
+                  <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+                     </div></div></div></div>
+    </div>
+  </div>
+        
+        
+        
+    </div>
+    <!--/.col-->
+
+    <div class="col-lg-12">
+      
+        
+        <div class="card">
+    <div class="card-header">
+      <i class="fa fa-edit"></i> Таблица с иконками и сортировкой
+      
+    </div>
+    <div class="card-body">
+      <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer">
+          <div class="row">
+              <div class="col-sm-12 col-md-6">
+                  <div class="dataTables_length" id="DataTables_Table_0_length">
+                  </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                  <div id="DataTables_Table_0_filter" class="dataTables_filter" > 
+                  
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-12">
+                  <table class="table table-responsive-sm table-striped table-bordered datatable dataTable no-footer" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info" style="border-collapse: collapse !important">
+        <thead>
+          <tr role="row">
+              <th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Username: activate to sort column descending" style="width: 215px;">Username</th>
+              <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Date registered: activate to sort column ascending" style="width: 184px;">Дата регистрации</th>
+              <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Role: activate to sort column ascending" style="width: 79px;">Должность</th>
+              <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 88px;">Статус</th>
+              <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: 191px;">Опции</th></tr>
+        </thead>
+        <tbody>
+        <tr role="row" class="odd">
+            <td class="sorting_1">Adam Alister</td>
+            <td>2012/01/21</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+            </a>
+            </td>
+          </tr><tr role="row" class="even">
+            <td class="sorting_1">Adinah Ralph</td>
+            <td>2012/06/01</td>
+            <td>Admin</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+            </a>
+            </td>
+          </tr><tr role="row" class="odd">
+            <td class="sorting_1">Ajith Hristijan</td>
+            <td>2012/03/01</td>
+            <td>Member</td>
+            <td>
+              ТекстТекст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+          </tr><tr role="row" class="even">
+            <td class="sorting_1">Alphonse Ivo</td>
+            <td>2012/01/01</td>
+            <td>Member</td>
+            <td>
+             ТекстТекст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+                <i class="fa fa-search-plus "></i>
+              </a>
+              <a class="btn btn-info" href="#">
+                <i class="fa fa-edit "></i>
+              </a>
+              <a class="btn btn-danger" href="#">
+                <i class="fa fa-trash-o "></i>
+              </a>
+            </td>
+          </tr><tr role="row" class="odd">
+            <td class="sorting_1">Anton Phunihel</td>
+            <td>2012/01/01</td>
+            <td>Member</td>
+            <td>
+              ТекстТекст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+                <i class="fa fa-search-plus "></i>
+              </a>
+              <a class="btn btn-info" href="#">
+                <i class="fa fa-edit "></i>
+              </a>
+              <a class="btn btn-danger" href="#">
+                <i class="fa fa-trash-o "></i>
+              </a>
+            </td>
+          </tr><tr role="row" class="even">
+            <td class="sorting_1">Bao Gaspar</td>
+            <td>2012/01/01</td>
+            <td>Member</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+          </tr><tr role="row" class="odd">
+            <td class="sorting_1">Bernhard Shelah</td>
+            <td>2012/06/01</td>
+            <td>Admin</td>
+            <td>
+             Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+          </tr><tr role="row" class="even">
+            <td class="sorting_1">Bünyamin Kasper</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+          </tr><tr role="row" class="odd">
+            <td class="sorting_1">Carlito Roffe</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+            </a>
+            </td>
+          </tr>
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Bünyamin Kasper</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+          </tr>
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Bünyamin Kasper</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+          </tr>
+            
+            
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Bünyamin Kasper</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+                Текст Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+          </tr>
+            
+            
+            
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Byamin Sper</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+          </tr>
+            
+            
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Bin Kas</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+          </tr>
+            
+            
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Bamin Ker</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+          </tr>
+            
+            
+             <tr role="row" class="even">
+            <td class="sorting_1">Петр</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+          </tr>
+            
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Chidubem Gottlob</td>
+            <td>2012/02/01</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+            </a>
+            </td>
+          </tr></tbody>
+      </table></div></div>
+          <div class="row"><div class="col-sm-12 col-md-5">
+              </div>
+              <div class="col-sm-12 col-md-7">
+                  <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+                     </div></div></div></div>
+    </div>
+  </div>
+        
+        
+        
+        
+    </div>
+    <!--/.col-->
+
+       
+    <div class="col-lg-6">
+    
+         
+        <div class="card">
+    <div class="card-header">
+      <i class="fa fa-edit"></i> Таблица с иконками и сортировкой
+      
+    </div>
+    <div class="card-body">
+      <div id="DataTables_Table_0_wrapper2" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer" width="100%">
+          <div class="row">
+              <div class="col-sm-12 col-md-6">
+                  <div class="dataTables_length" id="DataTables_Table_0_length">
+                  </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                  <div id="DataTables_Table_0_filter" class="dataTables_filter" > 
+                  
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-12">
+                  <table class="table-responsive-sm table table-striped table-bordered datatable dataTable no-footer" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info" style="border-collapse: collapse !important" width="100%">
+        <thead>
+          <tr role="row">
+              <th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Username: activate to sort column descending" style="width: 215px;">Username</th>
+              <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Date registered: activate to sort column ascending" style="width: 184px;">Дата регистрации</th>
+              <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Role: activate to sort column ascending" style="width: 79px;">Должность</th>
+              <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 88px;">Статус</th>
+              
+              <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: 191px;">Опции</th>
+              
+              <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: 191px;">Text</th>
+              
+              <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: 191px;">Text</th>
+              
+            </tr>
+        </thead>
+        <tbody>
+        <tr role="row" class="odd">
+            <td class="sorting_1">Adam Alister</td>
+            <td>2012/01/21</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+            </a>
+            </td>
+             <td>
+              Текст
+            </td>
+             <td>
+              Текст
+            </td>
+            
+          </tr><tr role="row" class="even">
+            <td class="sorting_1">Adinah Ralph</td>
+            <td>2012/06/01</td>
+            <td>Admin</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+            </a>
+            </td>
+              <td>
+              Текст
+            </td>
+             <td>
+              Текст
+            </td>
+          </tr><tr role="row" class="odd">
+            <td class="sorting_1">Ajith Hristijan</td>
+            <td>2012/03/01</td>
+            <td>Member</td>
+            <td>
+              ТекстТекст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+              <td>
+              Текст
+            </td>
+             <td>
+              Текст
+            </td>
+          </tr><tr role="row" class="even">
+            <td class="sorting_1">Alphonse Ivo</td>
+            <td>2012/01/01</td>
+            <td>Member</td>
+            <td>
+             ТекстТекст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+                <i class="fa fa-search-plus "></i>
+              </a>
+              <a class="btn btn-info" href="#">
+                <i class="fa fa-edit "></i>
+              </a>
+              <a class="btn btn-danger" href="#">
+                <i class="fa fa-trash-o "></i>
+              </a>
+            </td>
+              <td>
+              Текст
+            </td>
+             <td>
+              Текст
+            </td>
+          </tr><tr role="row" class="odd">
+            <td class="sorting_1">Anton Phunihel</td>
+            <td>2012/01/01</td>
+            <td>Member</td>
+            <td>
+              ТекстТекст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+                <i class="fa fa-search-plus "></i>
+              </a>
+              <a class="btn btn-info" href="#">
+                <i class="fa fa-edit "></i>
+              </a>
+              <a class="btn btn-danger" href="#">
+                <i class="fa fa-trash-o "></i>
+              </a>
+            </td>
+              <td>
+              Текст
+            </td>
+             <td>
+              Текст
+            </td>
+          </tr><tr role="row" class="even">
+            <td class="sorting_1">Bao Gaspar</td>
+            <td>2012/01/01</td>
+            <td>Member</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+              <td>
+              Текст
+            </td>
+             <td>
+              Текст
+            </td>
+          </tr><tr role="row" class="odd">
+            <td class="sorting_1">Bernhard Shelah</td>
+            <td>2012/06/01</td>
+            <td>Admin</td>
+            <td>
+             Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+              <td>
+              Текст
+            </td>
+             <td>
+              Текст
+            </td>
+          </tr><tr role="row" class="even">
+            <td class="sorting_1">Bünyamin Kasper</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+              <td>
+              Текст
+            </td>
+             <td>
+              Текст
+            </td>
+          </tr><tr role="row" class="odd">
+            <td class="sorting_1">Carlito Roffe</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+            </a>
+            </td>
+              <td>
+              Текст
+            </td>
+             <td>
+              Текст
+            </td>
+          </tr>
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Bünyamin Kasper</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+                  <td>
+              Текст
+            </td>
+             <td>
+              Текст
+            </td>
+          </tr>
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Bünyamin Kasper</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+                  <td>
+              Текст
+            </td>
+             <td>
+              Текст
+            </td>
+          </tr>
+            
+            
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Bünyamin Kasper</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+                Текст Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+                  <td>
+              Текст
+            </td>
+             <td>
+              Текст
+            </td>
+          </tr>
+            
+            
+            
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Byamin Sper</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+                  <td>
+              Текст
+            </td>
+             <td>
+              Текст
+            </td>
+          </tr>
+            
+            
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Bin Kas</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+                  <td>
+              Текст
+            </td>
+             <td>
+              Текст
+            </td>
+          </tr>
+            
+            
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Bamin Ker</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+                  <td>
+              Текст
+            </td>
+             <td>
+              Текст
+            </td>
+          </tr>
+            
+            
+             <tr role="row" class="even">
+            <td class="sorting_1">Петр</td>
+            <td>2012/08/23</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+
+            </a>
+            </td>
+                   <td>
+              Текст
+            </td>
+             <td>
+              Текст
+            </td>
+          </tr>
+            
+            
+            
+            <tr role="row" class="even">
+            <td class="sorting_1">Chidubem Gottlob</td>
+            <td>2012/02/01</td>
+            <td>Staff</td>
+            <td>
+              Текст
+            </td>
+            <td>
+              <a class="btn btn-success" href="#">
+              <i class="fa fa-search-plus "></i>
+            </a>
+              <a class="btn btn-info" href="#">
+              <i class="fa fa-edit "></i>
+            </a>
+              <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o "></i>
+            </a>
+            </td>
+                  <td>
+              Текст
+            </td>
+             <td>
+              Текст
+            </td>
+          </tr></tbody>
+      </table></div></div>
+          <div class="row"><div class="col-sm-12 col-md-5">
+              </div>
+              <div class="col-sm-12 col-md-7">
+                  <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+                     </div></div></div></div>
+    </div>
+  </div>
+        
+        
+        
+    </div>
+    <!--/.col-->
+
+      
+      
+  </div>
+  <!--/.row-->
+
+ 
+  <!--/.row-->
+</div></div>
+      </div>
+        
+           
+
+        
+        
+        
+        
+        
+        
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script src="../../test/js/sidebar-menu.js"></script>
+  <script>
+    $.sidebarMenu($('.sidebar-menu'))
+  </script>
+    
+  
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+<script src="../../test/b/js/script.js"></script>
+    <script src="../../test/js/tab.js"></script>
+    <script src="../../test/js/datatables.js"></script>
+    <script src="../../test/js/dataTables.bootstrap4.min.js"></script>
+     <script src="../../test/js/datatables.min.js"></script>
+</body>
+
+</html>

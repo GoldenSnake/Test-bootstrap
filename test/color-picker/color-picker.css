@@ -1,0 +1,130 @@
+:root {
+  --circle1-color: #5369ac;
+  /* 1 */
+  --circle2-color: #42548a;
+/*    2*/
+    --circle3-color: #323f67;
+/*    3*/
+    --circle4-color: #888888;
+/*    4*/
+}
+
+
+
+.btn-primary-b1,
+.normal {
+  color: #fff;
+  background-color: var(--circle1-color);
+  border-color: #535BE2;
+}
+
+.btn-primary-b1:hover,
+.hover{
+  color: #fff;
+  background-color: var(--circle2-color);
+  border-color: var(--circle2-color);
+}
+
+.btn-primary-b1:focus, .btn-primary-b1.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-primary-b1.disabled, .btn-primary-b1:disabled {
+  color: #fff;
+  background-color: var(--circle4-color);
+  border-color: var(--circle4-color);
+}
+
+.btn-primary-b1:active,
+.active-11 {
+  color: #fff;
+  background-color: var(--circle3-color);
+  border-color: var(--circle3-color);
+}
+
+.btn-primary-b1:not(:disabled):not(.disabled):active:focus, .btn-primary-b1:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary-b1.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+
+
+
+
+
+
+
+/*
+.circle1 {
+    background: var(--circle1-color);
+    width: 127px;
+    height: 120px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    position: absolute;
+    left: -24.74px;
+    top: -30.84px;
+}
+
+.circle2 {
+    background: var(--circle2-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    width: 201.73px;
+    height: 190.61px;
+    border-radius: 50%;
+    left: 244.43px;
+    top: -31.21px;
+}
+
+.circle3 {
+    background: var(--circle3-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    width: 152.51px;
+    height: 144.11px;
+    border-radius: 50%;
+    left: 196.77px;
+    top: -57.12px;
+}
+
+.circle4 {
+    background: var(--circle4-color);
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    border-radius: 50%;
+    width: 84.59px;
+    height: 79.92px;
+    left: 314.02px;
+    top: 38.43px;
+}
+*/
+
+
+
+
+
+
+.n, .p, .c1, .c2, .c3, .c4 {
+    position: relative;
+    font-family: Roboto;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding: 5px;
+    margin: 10px;
+   }
+
+
+
+
+.color-picker {
+    position: absolute;
+    padding: 0;
+    margin: 5px 10px;
+    border: none;
+    width: 50px;
+    height: 40px;
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.25);
+
+

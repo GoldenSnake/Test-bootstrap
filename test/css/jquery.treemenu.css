@@ -1,0 +1,87 @@
+/* For treemenu.js */
+.tree12menu li {
+    list-style: none;
+}
+
+.tree12menu .toggler {
+    cursor: pointer; 
+}
+
+.tree12menu .toggler:before { 
+    display: inline-block;
+    margin-right: 2pt; 
+}
+
+li.tree12-empty3 > .toggler { 
+    opacity: 0.3; 
+    cursor: default; }
+
+li.tree12-empty3 > .toggler:before { content: "\f068"; 
+    font-family: FontAwesome;
+}
+
+li.tree12-closed3 > .toggler:before { 
+    content: "\f078"; 
+    font-family: FontAwesome; 
+}
+li.tree12-opened3 > .toggler:before { content: "\f068";
+font-family: FontAwesome;
+}
+
+
+
+
+
+
+.tree12 {
+    background-color:transparent; 
+    color:#000000;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.tree12,
+.tree12 ul,
+.tree12 ul ul {
+    list-style: none;	
+}
+
+.tree12 li,
+.tree12 li > a,
+.tree12 li > span {
+        
+    padding: 4pt;
+    border-radius: 0px;
+}
+
+.tree12 li a {
+   color: #151b1e;
+    text-decoration: none;
+    line-height: 20pt;    
+}
+
+.tree12 li a:hover,
+.tree12 li span:hover{
+    background-color: #f7f7f7;
+    }
+
+.tree12 > .active {
+    background-color: #34495E;
+    color: white;
+}
+
+.tree12 > .active a {
+    color: #fff;
+}
+
+.tree12 li a.active:hover {
+    background-color: #f7f7f7;
+}
+
+
+
+
+
+
+
